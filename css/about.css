@@ -1,6 +1,7 @@
 html {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 16px;
+  color: #36486b;
 }
 .container {
   max-width: 1000px;
@@ -32,52 +33,37 @@ header a {
 header a:hover {
   text-decoration: underline;
 }
-.main-content {
-  width: 100%;
-  display: flex;
+.contact {
+  max-width: 800px;
+  margin: auto;
 }
-.text-container {
-  width: 37%;
-  padding-top: 50px;
-  color: #052f74;
-}
-.text-container h2 {
+.contact h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 3.3rem;
-  font-weight: bold;
-  margin: 0;
 }
-.text-container p {
-  letter-spacing: 0.6px;
-  word-spacing: 1px;
-}
-.text-container button {
-  border-radius: 30px;
-  width: 300px;
-  height: 60px;
-  background-color: #0756d6;
-  font-size: 1.4rem;
-  border: none;
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #36486b;
   color: white;
   cursor: pointer;
-  box-shadow: 10px 10px 5px lightgrey;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 1.2rem;
 }
-.text-container button:hover {
-  background-color: #0756d6;
-  background-color: #558de8;
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #496292;
 }
-.text-container button:focus {
-  outline: 0;
-}
-.image-container {
-  width: 60%;
-}
-.image-container .main-image {
-  width: 650px;
-  height: auto;
-}
-.scroll-content {
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: #5b7bb8;
   display: none;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .header-container {
@@ -112,35 +98,6 @@ header a:hover {
     border-radius: 10px;
   }
   .header-container a .home {
-    display: none;
-  }
-  .container {
-    width: 100%;
-    display: flex;
-  }
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .text-container {
-    width: 100%;
-    text-align: center;
-  }
-  .text-container p {
-    font-size: 1.3rem;
-  }
-  .text-container button {
-    display: none;
-  }
-  .image-container {
-    width: 100%;
-  }
-  .image-container .main-image {
-    width: 100%;
-    height: auto;
-  }
-  .scroll-content {
     display: none;
   }
 }

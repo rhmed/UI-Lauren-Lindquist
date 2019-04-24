@@ -3,8 +3,20 @@
 html { 
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
+    // background-color: #c6cedd;
 
 }
+
+// .background-container {
+//     background-color: #36486b;  
+
+// }
+// .top-container{
+//     margin: 15px;
+//     background-color: white;
+//     box-shadow: 10px 10px 5px #8896b2;
+// }
+
 
 .container {
     max-width: 1000px;
@@ -14,6 +26,7 @@ html {
 
 .header-container {
     max-width: 100%;
+    padding-top: 15px;
 }
 
 header {
@@ -21,23 +34,38 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 15px;
+
 
     h1 {
-        color: grey;
+        font-family: 'Playfair Display', serif;
+        color: #052f74;
         font-size: 1.2rem;
         padding-right: 15px;
-        // padding-right: 840px;
+        // padding-right: 650px;
 
 
     }
 
     a {
         color: grey;
-        padding: 15px;
+        padding: 10px;
         text-decoration: none;
+        margin-right: 25px;
+
 
     }
+
+    a:hover{
+        text-decoration: underline;
+
+
+    }
+
 }
+
+
+
 
 .main-content {
     width: 100%;
@@ -47,9 +75,11 @@ header {
 .text-container {
     width: 37%;
     padding-top: 50px;
-    color: #36486b;
+    color: #052f74;
 
     h2 {
+        font-family: 'Playfair Display', serif;
+
         font-size: 3.3rem;
         font-weight: bold;
         margin: 0;
@@ -61,16 +91,29 @@ header {
     }
 
     button {
-        border-radius: 20px;
+        // font-family: 'Playfair Display', serif;
+
+        border-radius: 30px;
         width: 300px;
         height: 60px;
-        background-color: #558de8;
+        background-color: #0756d6;
         font-size: 1.4rem;
         border: none;
         color: white;
         cursor: pointer;
         box-shadow: 10px 10px 5px lightgrey;
     }
+
+    button:hover {
+        background-color: #0756d6;
+        background-color: #558de8;
+
+    }
+
+    button:focus {
+        outline:0;
+    }
+
 }
 
 .image-container {
@@ -83,48 +126,81 @@ header {
 }
 
 .scroll-content {
-    padding-top: 70px;
-    width: 100%;
-    height:300px;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    // align-items: center;
-
+    display:none;
 }
 
-.scroll-left {
-    // height: 300px;
-    width: 30%;
-    border-radius: 10px;
+// .scroll-content {
 
-    .left-image {
-        width: 170px;
-        height: auto;
-    }
-}
-
-.scroll-center{
-    width: 30%;
-    border-radius: 10px;
-    background-color: #36486b;
-    color: white;
-    h3: 2rem;
+//     max-width: 100%;
+//     margin: auto;
+//     padding: 20px;
+//     display: flex;
+//     justify-content: space-around;
+//     text-align: center;
 
 
-}
+//     // display: none;
+//     margin: auto;
+//     display: none;
+//     padding-top: 70px;
+//     width: 100%;
+//     height:300px;
+//     display: flex;
+//     justify-content: space-between;
+//     text-align: center;
+//     color: #36486b;
+//     // align-items: center;
 
-.scroll-right {
-    width: 30%;
-    border-radius: 10px;
+// }
 
-    .right-image{
-        width:150px;
-        height: auto;
-    }
+// .scroll-left {
+//     // border: 1px solid black;
+//     // height: 300px;
+//     width: 300px;
+//     background-color: white;
+//     // box-shadow: 10px 10px 5px #8896b2;
 
- }
 
+
+//     .left-image {
+//         width: 170px;
+//         height: auto;
+//     }
+// }
+
+// .scroll-center{
+//     width: 300px;
+//     background-color: white;
+//     // box-shadow: 10px 10px 5px #8896b2;
+
+
+//     // background-color: #36486b;
+//     // color: white;
+//     // h3: 2rem;
+
+//     .middle-image {
+//         width: 160px;
+//         height: auto;
+//     }
+
+
+// }
+
+// .scroll-right {
+//     width: 300px;
+//     background-color: white;
+//     // box-shadow: 10px 10px 5px #8896b2;
+
+
+//     .right-image{
+//         width:150px;
+//         height: auto;
+//     }
+
+//  }
+
+
+// media 500
 
 
 @media(max-width: 500px){
@@ -141,9 +217,10 @@ header {
 
             // display:none;
             width: 100%;
-            color: grey;
+            color: #36486b;
             font-size: 1.2rem;
             text-align: center;
+            // margin-right: 0px;
 
         }
 
@@ -163,7 +240,7 @@ header {
 
         a {
             font-size: 1.7rem;
-            background-color: #36486b;
+            background-color: #558de8;
             color: white;
             border: 1px solid white;
             border-radius: 10px;
