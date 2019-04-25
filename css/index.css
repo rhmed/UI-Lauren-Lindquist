@@ -1,0 +1,146 @@
+html {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.header-container {
+  max-width: 100%;
+  padding-top: 15px;
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #052f74;
+  font-size: 1.2rem;
+  padding-right: 15px;
+}
+header a {
+  color: grey;
+  padding: 10px;
+  text-decoration: none;
+  margin-right: 25px;
+}
+header a:hover {
+  text-decoration: underline;
+}
+.main-content {
+  width: 100%;
+  display: flex;
+}
+.text-container {
+  width: 37%;
+  padding-top: 50px;
+  color: #052f74;
+}
+.text-container h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.3rem;
+  font-weight: bold;
+  margin: 0;
+}
+.text-container p {
+  letter-spacing: 0.6px;
+  word-spacing: 1px;
+}
+.text-container button {
+  border-radius: 30px;
+  width: 300px;
+  height: 60px;
+  background-color: #0756d6;
+  font-size: 1.4rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px lightgrey;
+}
+.text-container button:hover {
+  background-color: #0756d6;
+  background-color: #558de8;
+}
+.text-container button:focus {
+  outline: 0;
+}
+.image-container {
+  width: 60%;
+}
+.image-container .main-image {
+  width: 650px;
+  height: auto;
+}
+.scroll-content {
+  display: none;
+}
+@media (max-width: 500px) {
+  .header-container {
+    width: 100%;
+  }
+  .header-container header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-container h1 {
+    width: 100%;
+    color: #36486b;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .header-container .header-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    text-decoration: none;
+  }
+  .header-container .header-nav .home {
+    display: none;
+  }
+  .header-container a {
+    font-size: 1.7rem;
+    background-color: #558de8;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .header-container a .home {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+  .text-container p {
+    font-size: 1.3rem;
+  }
+  .text-container button {
+    display: none;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .image-container .main-image {
+    width: 100%;
+    height: auto;
+  }
+  .scroll-content {
+    display: none;
+  }
+}
